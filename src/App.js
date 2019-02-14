@@ -36,6 +36,11 @@ class App extends Component {
     }) });
 }      
 
+  delTodo = (id) => {
+   this.setState({ todos: [...this.state.todos.filter(todo => todo.id !== id)] });
+  }
+
+
   render() {
     return (
       <div className="App">
@@ -47,7 +52,7 @@ class App extends Component {
             height="50%"
           />         
         </header>
-        <Todos todos={this.state.todos} markComplete={this.markComplete} />
+        <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
       </div>
     );
   }
