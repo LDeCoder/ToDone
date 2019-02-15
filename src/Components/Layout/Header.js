@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Header () {
     return (
         <header>
-            <h1>This is THE to-DONE List</h1>
-        </header>
+            <h2>This is THE to-DONE List</h2>
+        </header> 
     )
 }
 
