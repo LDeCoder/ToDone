@@ -57,6 +57,7 @@ class App extends Component {
     return (
       <div className="App">
       <div className="container">        <header className="App-header">
+        <h3>This app brought to you by:</h3>
         <img
             className="App-Logo"
             src={require("./Images/LDeCoderLOGO.png")}
