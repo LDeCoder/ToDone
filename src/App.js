@@ -5,7 +5,7 @@ import Todos from "./Components/Todos";
 import Header from "./Components/Layout/Header";
 import AddTodo from "./Components/AddTodo";
 import About from "./Components/Pages/About";
-import uuid from "uuid";
+// import uuid from "uuid";
 import { Link } from "react-router-dom";
 import axios from 'axios';
 
@@ -35,8 +35,7 @@ class App extends Component {
 
   delTodo = id => {
     axios.delete(`http://localhost:8081/${id}`)
-    .then(res => this.setState({ todos: [...this.state.todos.filter
-    (todo => todo.id !== id)] })); 
+    .then(res => this.setState({ todos: [...this.state.todos.filter(todo => todo.id !== id)] })); 
     }
 
   addTodo = title => {
@@ -60,6 +59,7 @@ class App extends Component {
                 src={require("./Images/LDeCoderLOGO.png")}
                 width="auto"
                 height="100%"
+                alt="null"
               />
               <Header />
               <AddTodo addTodo={this.addTodo} />
