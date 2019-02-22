@@ -1,16 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function About() {
+function ToVacay() {
   return (
     <React.Fragment>
-      <h3>ABOUT</h3>
-      <p>
-        This is an app that is waiting for some new functionality - check back -
-        it's definitely going to be a WOW FACTOR!
-      </p>{" "}
-      <br />
-      <h1>Thanks for visiting!</h1>
+      <h3>ToVACAY</h3>
+      <p>Let's make a list to go on Vacation!</p> <br />
       <div className="link">
       <Link style={linkStyle} to="/">
           HOME
@@ -41,8 +36,8 @@ function About() {
 }
 
 const linkStyle = {
-  color: " rgb(3, 79, 79)",
+  color: " rgb(10, 05, 75)",
   textDecoration: "none"
 };
 
-export default About;
+export default ToVacay;
