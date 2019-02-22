@@ -1,0 +1,51 @@
+.container {
+  text-align: left;
+  margin: 1em;
+  padding: 0 1em;
+}
+
+/* h3, p {
+  /* color: rgb(5, 145, 145); */
+  /* color: rgb(150, 220, 220); */
+/* }  */
+
+.App-Logo {
+  animation: App-logo-spin infinite 10s linear;
+  height: 15vmin;
+  padding: 3%;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: rgb(3, 79, 79);
+  /* background-color: rgba(6, 138, 124, 0.742); */
+  /* background-color: rgb(242, 151, 14); */
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px dotted white;
+  background: rgb(3, 79, 79);
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(64, 224, 208, 0.742);
+
+}
+
+
+@keyframes App-logo-spin {
+ 0% {
+    transform: rotateY(360deg); 
+}
+}
