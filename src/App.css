@@ -4,9 +4,10 @@
   padding: 0 1em;
 }
 
-h3, p {
-  color: rgb(5, 145, 145);
-}
+/* h3, p {
+  /* color: rgb(5, 145, 145); */
+  /* color: rgb(150, 220, 220); */
+/* }  */
 
 .App-Logo {
   animation: App-logo-spin infinite 10s linear;
@@ -17,6 +18,8 @@ h3, p {
 
 .App-header {
   background-color: rgb(3, 79, 79);
+  /* background-color: rgba(6, 138, 124, 0.742); */
+  /* background-color: rgb(242, 151, 14); */
   min-height: 20vh;
   display: flex;
   flex-direction: column;

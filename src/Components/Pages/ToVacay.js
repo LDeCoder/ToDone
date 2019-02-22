@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 
 function ToVacay() {
   return (
-    <React.Fragment>
-      <h3>ToVACAY</h3>
-      <p>Let's make a list to go on Vacation!</p> <br />
-      <div className="link">
+    <div classname="VacayStyle" style={{backgroundColor: "tan", color: 'teal'}}>
+    <React.Fragment>      
+    <div className="link">
       <Link style={linkStyle} to="/">
           HOME
         </Link>{" "}
@@ -31,12 +30,15 @@ function ToVacay() {
           ABOUT
         </Link>{" "}
       </div>
+      <h3>VACAY</h3>
+      <p>Let's make a list to go on Vacation!</p> <br />
     </React.Fragment>
+    </div>
   );
 }
 
 const linkStyle = {
-  color: " rgb(10, 05, 75)",
+  color: " white",
   textDecoration: "none"
 };
 

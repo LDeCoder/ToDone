@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 function YourList() {
   return (
+    <div classname="YourListStyle" style={{backgroundColor: 'rgb(242, 151, 14)',  color: 'rgb(3, 79, 79)'}}>
     <React.Fragment>
-      <h3>ToCLEAN</h3>
-      <p>Create your own list! Add a title and then make a list.</p> <br />
+      {/* <h3>YOUR LIST</h3>
+      <p>Create your own list! Give it a title and then make your list.</p> <br /> */}
       <div className="link">
       <Link style={linkStyle} to="/">
           HOME
@@ -31,12 +32,16 @@ function YourList() {
           ABOUT
         </Link>{" "}
       </div>
+      <h3>YOUR LIST</h3>
+      <p>Create your own list! Give it a title and then make your list.</p> <br />
+
     </React.Fragment>
+    </div>
   );
 }
 
 const linkStyle = {
-  color: " rgb(22, 88, 6)",
+  color: " white",
   textDecoration: "none"
 };
 

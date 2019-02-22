@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 
 function ToClean() {
   return (
+    <div classname="CleanStyle" style={{backgroundColor: "darkgrey", color: 'teal'}}>
     <React.Fragment>
-      <h3>ToCLEAN</h3>
-      <p>This is a NEW LIST called To Clean!</p> <br />
       <div className="link">
         <Link style={linkStyle} to="/">
           HOME
@@ -31,12 +30,15 @@ function ToClean() {
           ABOUT
         </Link>{" "}
       </div>
+      <h3>CLEAN</h3>
+      <p>This is a NEW LIST called To Clean!</p> <br />
     </React.Fragment>
+    </div>
   );
 }
 
 const linkStyle = {
-  color: " rgb(22, 88, 6)",
+  color: "white",
   textDecoration: "none"
 };
 
